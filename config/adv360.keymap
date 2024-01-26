@@ -30,7 +30,8 @@
 &mt {
     tapping-term-ms = <250>;
 };
-  keymap {
+
+/   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
