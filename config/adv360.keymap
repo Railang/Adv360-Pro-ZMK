@@ -26,6 +26,17 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+macros {
+        zed_em_kay: min {
+            compatible = "min";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp DOWN>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    };
     };
 
     keymap {
