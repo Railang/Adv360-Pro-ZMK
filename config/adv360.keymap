@@ -36,11 +36,12 @@ macros {
                 , <&macro_release &kp LGUI>
                 ;
         };
-    };
-    };
-mt {
+&mt {
     tapping-term-ms = <150>;
 };
+    };
+    };
+
     keymap {
     compatible = "zmk,keymap";
 
