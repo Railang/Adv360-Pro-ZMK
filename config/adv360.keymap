@@ -26,6 +26,13 @@
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
       };
+        tda: tap_dance_A_CTRLA {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp A>, <&kp LC(A)>;
+        };
+    };
 macros {
         zed_em_kay: min {
             compatible = "min";
