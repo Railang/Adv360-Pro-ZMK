@@ -26,11 +26,11 @@
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
       };
-        td0: tap_dance_0 {
+        tdA: tap_dance_A {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp A>, <&kp LC(A)>;
+            bindings = <&kp A>, <&kp LC(A)>, <&kp A>;
         };
     };
 macros {
