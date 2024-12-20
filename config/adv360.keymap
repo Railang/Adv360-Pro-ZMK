@@ -25,6 +25,7 @@
           quick_tap_ms = <0>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
+          hold-trigger-on-release = true;
       };
 macros {
         zed_em_kay: min {
