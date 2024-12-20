@@ -31,26 +31,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp A>, <&kp LC(A)>, <&kp LC(A)>;
-        td1: tap_dance_xCTRLX {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp X>, <&kp LC(X)>, <&kp LC(X)>;
-        td2: tap_dance_cCTRLC {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp C>, <&kp LC(C)>, <&kp LC(C)>;
-        td3: tap_dance_vCTRLV {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp V>, <&kp LC(V)>, <&kp LC(V)>;
-        td4: tap_dance_bCTRLB {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp B>, <&kp LC(B)>, <&kp LC(B)>;
         };
 macros {
         zed_em_kay: min {
