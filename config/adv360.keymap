@@ -50,6 +50,12 @@
             tapping-term-ms = <100>;
             bindings = <&kp V>, <&kp LC(V)>, <&kp LC(V)>;
         };
+        tdb: tap_dance_bCTRLB {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp B>, <&kp LC(B)>, <&kp LC(B)>;
+        };
 macros {
         zed_em_kay: min {
             compatible = "min";
