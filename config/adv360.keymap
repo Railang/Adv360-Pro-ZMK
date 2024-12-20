@@ -6,13 +6,6 @@
 
 / {
     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp LC(A)>, <&kp LC(A)>;
-        };
-    };
       #include "macros.dtsi"
       #include "version.dtsi"
       #ifndef VERSION_MACRO
@@ -33,6 +26,12 @@
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
       };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp LC(A)>, <&kp LC(A)>;
+        };
 macros {
         zed_em_kay: min {
             compatible = "min";
