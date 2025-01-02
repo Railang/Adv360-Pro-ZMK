@@ -17,45 +17,45 @@
       };
       #endif
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <150>;
-          quick_tap_ms = <0>;
-          flavor = "balanced";
-          bindings = <&kp>, <&kp>;
-      };
-        tda: tap_dance_ACTRLA {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp LC(A)>, <&kp LC(A)>;
-        };
-        tdx: tap_dance_XCTRLX {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp X>, <&kp LC(X)>, <&kp LC(X)>;
-        };
-        tdc: tap_dance_CCTRLC {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp LC(C)>, <&kp LC(C)>;
-        };
-        tdv: tap_dance_VCTRLV {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp V>, <&kp LC(V)>, <&kp LC(V)>;
-        };
-        tdb: tap_dance_BCTRLB {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp B>, <&kp LC(B)>, <&kp LC(B)>;
-        };
+#      hm: homerow_mods {
+#          compatible = "zmk,behavior-hold-tap";
+#          label = "HOMEROW_MODS";
+#          #binding-cells = <2>;
+#          tapping-term-ms = <150>;
+#          quick_tap_ms = <0>;
+#          flavor = "balanced";
+#          bindings = <&kp>, <&kp>;
+#      };
+#        tda: tap_dance_ACTRLA {
+#            compatible = "zmk,behavior-tap-dance";
+#            #binding-cells = <0>;
+#            tapping-term-ms = <200>;
+#            bindings = <&kp A>, <&kp LC(A)>, <&kp LC(A)>;
+#        };
+#        tdx: tap_dance_XCTRLX {
+#           compatible = "zmk,behavior-tap-dance";
+#            #binding-cells = <0>;
+#            tapping-term-ms = <200>;
+#            bindings = <&kp X>, <&kp LC(X)>, <&kp LC(X)>;
+#        };
+#        tdc: tap_dance_CCTRLC {
+#            compatible = "zmk,behavior-tap-dance";
+#            #binding-cells = <0>;
+#            tapping-term-ms = <200>;
+#            bindings = <&kp C>, <&kp LC(C)>, <&kp LC(C)>;
+#        };
+#        tdv: tap_dance_VCTRLV {
+#            compatible = "zmk,behavior-tap-dance";
+#            #binding-cells = <0>;
+#            tapping-term-ms = <200>;
+#            bindings = <&kp V>, <&kp LC(V)>, <&kp LC(V)>;
+#        };
+#        tdb: tap_dance_BCTRLB {
+#            compatible = "zmk,behavior-tap-dance";
+#            #binding-cells = <0>;
+#            tapping-term-ms = <200>;
+#            bindings = <&kp B>, <&kp LC(B)>, <&kp LC(B)>;
+#        };
 macros {
         zed_em_kay: min {
             compatible = "min";
